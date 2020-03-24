@@ -1,0 +1,20 @@
+<div class="asdf">
+  <div class="header">  <button class="menubutton" mat-stroked-button (click)="opened=!opened">Menu</button>
+  </div>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">
+      <ul style="list-style-type:none;">
+        <li><a routerLink="/login">LogIn</a></li>
+        <li><a routerLink="/register">Register</a></li>
+        <li><a routerLink="/feedback">Feedback</a></li>
+      </ul>  
+    </mat-sidenav>
+   
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <div class="footer">
+    <h2>Powered By Krishna Jethava.</h2>
+  </div>
+</div>
